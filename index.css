@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-size: 16px;
+  }
+  
+  ul li {
+    list-style: none;
+  }
+  
+  .accordion {
+    width: 30%;
+    margin: 50px auto 0;
+  }
+  
+  .accordion > li:first-child {
+    border: none;
+  }
+  
+  .accordion > li {
+    position: relative;
+    border-top: 1px solid #2ea1de;
+  }
+  
+  .accordion .link a {
+    position: relative;
+    display: block;
+    padding: 15px 20px;
+    color: #1b3746;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  .accordion .active .link > a {
+    background: #1795d8;
+  }
+  
+  .accordion .link > a {
+    background: #29a8ec;
+    color: #fff;
+  }
+  
+  .accordion .link > a:hover {
+    background: #1795d8;
+  }
+  
+  
+  /* submenu */
+  
+  .submenu {
+    display: none;
+    background: #f8f9f9;
+  }
+  
+  .accordion .submenu > li a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #8fa7b3;
+    cursor: pointer;
+  }
+  
+  .accordion .submenu > li:first-child {
+    border: none;
+  }
+  
+  .accordion .submenu > li {
+    border-top: 1px solid #dae0e0;
+  }
+  
+  .accordion .submenu > li a:hover {
+    background: #e6ecec;
+    color: #1795d8;
+    padding: 10px 15px 10px 20px;
+    transition: padding 0.2s ease-in;
+  }
+  
+  .fa {
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    transform: translateY(-50%);
+  }
+  
+  .active .fa {
+    transform: translateY(-50%) rotate(180deg);
+  }
